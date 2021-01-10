@@ -1,0 +1,47 @@
+EffectDef {
+ Emitors {
+  EmitorDef fire_middle {
+   ShapeType Box
+   ShapeSize 0.1 0 0.1
+   ConeAngle 360 45 60
+   MaxNum 4
+   BirthRate 0.35
+   Offset 0 0 0
+   Angles -92.00001 -0.00001 -179.99998
+   LocalTransform 0
+   Material "{3E6CE4D61F8AC71F}graphics/Particles/materials/fire/fire_medium_camp_02.emat"
+   CenterY -1
+   ScaleX 1
+   ScaleY 0.5
+   SizeMultiplier 0.2
+   SizeRND 0.2
+   RandomRotDir 0
+   RotMultiplier 0
+   StretchMultiplier 0
+   RandomAngle 0
+   Sort 0
+   BillboardingType Full
+   Velocity 0
+   VelocityRND 0
+   VelAffect 2
+   Wind 0
+   AnimOnce 0
+   AnimFPS 30
+   LifetimeByAnim 0
+   RandomFrame 0
+   LifeTime 6
+   LifeTimeRND 1
+   Color {
+    0 0.251 0.251 0.251 1 0.251 0.251 0.251
+   }
+   Alpha {
+    0 0 0.2 1 0.44882 1 0.8 1 1 0
+   }
+   Size {
+    0 0.35 1 1
+   }
+   EffectTime 1
+   Repeat 1
+  }
+ }
+}

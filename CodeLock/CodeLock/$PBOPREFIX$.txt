@@ -1,0 +1,6 @@
+//<'CodeLock.pbo' properties via Mikero's dos tools, dll version 7.89>
+prefix=CodeLock;
+Mikero=DePbo.dll.7.46;
+version=Wed Nov 25 14:44:13 2020;
+//PboType=Arma Addon;
+//</properties>

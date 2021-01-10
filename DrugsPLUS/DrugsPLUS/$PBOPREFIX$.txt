@@ -1,0 +1,5 @@
+//<'DrugsPLUS.pbo' properties via Mikero's dos tools, dll version 7.89>
+product=dayz ugc;
+prefix=DrugsPLUS;
+//PboType=Arma Addon;
+//</properties>

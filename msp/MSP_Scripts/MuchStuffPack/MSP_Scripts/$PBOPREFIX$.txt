@@ -1,0 +1,6 @@
+//<'MSP_Scripts.pbo' properties via Mikero's dos tools, dll version 7.89>
+prefix=MuchStuffPack\MSP_Scripts;
+Mikero=DePbo.dll.7.70;
+version=Mon Nov 16 12:05:15 2020;
+//PboType=Arma Addon;
+//</properties>

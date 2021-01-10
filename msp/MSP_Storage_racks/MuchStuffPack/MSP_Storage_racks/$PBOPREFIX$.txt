@@ -1,0 +1,6 @@
+//<'MSP_Storage_racks.pbo' properties via Mikero's dos tools, dll version 7.89>
+prefix=MuchStuffPack\MSP_Storage_racks;
+Mikero=DePbo.dll.7.70;
+version=Thu Nov 05 13:51:15 2020;
+//PboType=Arma Addon;
+//</properties>
