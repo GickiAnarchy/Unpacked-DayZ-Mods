@@ -1,0 +1,5 @@
+enum WTF69Modifiers
+{
+MDF_WTF69 = 1,
+MDF_WTF69VIRUS = 1708,
+}

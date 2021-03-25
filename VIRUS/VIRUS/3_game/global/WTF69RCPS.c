@@ -1,0 +1,4 @@
+enum WTF69RPCs
+{
+	RPC_WTF69VIGNETTE = 0,
+}

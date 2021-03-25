@@ -1,0 +1,6 @@
+//<'VIRUS.pbo' properties via Mikero's dos tools, dll version 7.97>
+prefix=VIRUS;
+Mikero=DePbo.dll;
+version=00000000;
+//PboType=Arma Addon;
+//</properties>

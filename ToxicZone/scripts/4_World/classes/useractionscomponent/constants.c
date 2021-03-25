@@ -1,0 +1,4 @@
+
+
+const int AT_INJECT_RADCURE_S = 1998;
+const int AT_INJECT_RADCURE_T = 1999;
