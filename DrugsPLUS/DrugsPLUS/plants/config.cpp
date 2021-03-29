@@ -62,4 +62,12 @@ class CfgVehicles
 			CropsType="DP_CocaLeaves";
 		};
 	};
+
+	class MushroomBase;
+	class PsilocybeMushroom: MushroomBase
+	{
+		scope=2;
+		displayName="Psilocybe Mushroom";
+		descriptionShort="Psilocybe Mushroom.  Looks tasty.";
+	};
 };

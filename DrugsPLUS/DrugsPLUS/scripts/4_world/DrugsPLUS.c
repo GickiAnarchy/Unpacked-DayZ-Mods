@@ -3,7 +3,7 @@ modded class DP_Plant_Coca //deprecated
 	override void Harvest( PlayerBase player )
 	{
 		super.Harvest(player);
-		if(GetGame().IsServer() && GetDayZGame().GetDrugsPLUSConfig().dp_removeAfterHarvest==true){
+		if(GetGame().IsServer() && GetDPConfig().dp_removeAfterHarvest==true){
 			GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( RemovePlant, 10, true );
 		}
 	}
@@ -24,11 +24,11 @@ modded class PlantBase
 	{	
 		private bool isFertilized = false;
 
-		super.Init( garden_base, fertility, harvesting_efficiency, water)
+		super.Init( garden_base, fertility, harvesting_efficiency, water);
 		
 		//reads settings from DrugsPLUS.json
-		m_coca_growtime 			= GetDayZGame().GetDrugsPLUSConfig().coca_growtime;
-		m_coca_cropcount 		= GetDayZGame().GetDrugsPLUSConfig().coca_cropcount;
+		m_coca_growtime 			= GetDPConfig().coca_growtime;
+		m_coca_cropcount 		= GetDPConfig().coca_cropcount;
 
 		m_GardenBase = garden_base;
 		
@@ -45,7 +45,8 @@ modded class PlantBase
 				m_CropsCount = m_coca_cropcount;
 				break;
 			default:
-			    //not a coca plant, exit function to avoid messing up other plants
+			      //not a coca plant, exit function to avoid messing up other plants
+                        super.Init( garden_base, fertility, harvesting_efficiency, water)
 				return;	
 		}
 
@@ -101,9 +102,6 @@ modded class SeedPackBase
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 	override void EmptySeedPack( PlayerBase player )
 	{
-
-		super.EmptySeedPack( player )
-
 		string pack_type = GetType();
 		string seeds_type = "";
 		
@@ -113,17 +111,17 @@ modded class SeedPackBase
 		int seeds_quantity_max;
 		int seeds_quantity = seeds_quantity_max;
 		// read seed count values from config file
-		m_cocaSeed_count 		=  GetDayZGame().GetDrugsPLUSConfig().cocaSeed_count;		// Coca
+		m_cocaSeed_count 		=  GetDPConfig().cocaSeed_count;		// Coca
 
 		// select the current seedpack
 		switch(this.GetType()) {
-			case "CocaSeedsPack":  
+			case "DP_CocaSeedsPack":  
 				seeds_quantity_max = m_cocaSeed_count;
 				break;			
-			
+			//not a coca plant, exit function to avoid messing up other plants
 			default:
-				seeds_quantity_max = 9;
-				break;
+                        super.EmptySeedPack(player);
+				return;
 		}
 		
 		seeds_quantity = Math.Round( seeds_quantity_max * GetHealth01("","") );

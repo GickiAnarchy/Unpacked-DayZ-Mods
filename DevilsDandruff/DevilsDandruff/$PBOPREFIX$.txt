@@ -1,0 +1,5 @@
+//<'DevilsDandruff.pbo' properties via Mikero's dos tools, dll version 7.97>
+product=dayz ugc;
+prefix=DevilsDandruff;
+//PboType=Arma Addon;
+//</properties>
