@@ -1,0 +1,6 @@
+//<'Gear.pbo' properties via Mikero's dos tools, dll version 7.97>
+prefix=WRDG\Notes\Gear;
+Mikero=DePbo.dll.7.82;
+version=20110401;
+//PboType=Arma Addon;
+//</properties>

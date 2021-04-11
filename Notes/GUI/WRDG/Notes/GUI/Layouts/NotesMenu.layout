@@ -1,0 +1,87 @@
+FrameWidgetClass RootContainer {
+ inheritalpha 0
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass Note {
+   ignorepointer 1
+   position 0 0
+   size 0.3 0.75
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   imageTexture "{DB133C1AA1DFD77F}WRDG/Notes/GUI/ImageSets/RippedPaper.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   {
+    MultilineEditBoxWidgetClass NoteTextWidget {
+     disabled 1
+     inheritalpha 0
+     color 0 0 0 1
+     position 0 17.82
+     size 0.8 0.844
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style DayZNormal
+     text "ERROR - Sync Failure!"
+     font "gui/fonts/metronbook22"
+     "exact text" 0
+     "size to text h" 0
+     "size to text v" 0
+     lines 30
+     "limit visible" 1
+    }
+    ButtonWidgetClass CloseButton {
+     visible 0
+     inheritalpha 1
+     color 1 1 1 0.7843
+     position 50.6944 51.2701
+     size 0.04 0.03
+     halign right_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     userID 2
+     text "X"
+     font "gui/fonts/metron-bold22"
+     "text color" 0.502 0 0 1
+    }
+   }
+  }
+  ImageWidgetClass Vignette {
+   ignorepointer 1
+   color 0 0 0 0.7843
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   imageTexture "{E6B3EF816E067499}gui/textures/inventory_bgvignette.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+  }
+ }
+}
